@@ -24,7 +24,7 @@ RUN apt-get update && \
 RUN ln -fs /usr/share/zoneinfo/America/Bogota /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata
 
-WORKDIR /iasyc
+WORKDIR /ia
 COPY . .
 
 # launch api
